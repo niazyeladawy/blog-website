@@ -20,6 +20,7 @@ type Comment = {
     body: string;
 };
 
+
 const BlogPostPage: React.FC = () => {
     const params = useParams()
 
@@ -61,23 +62,25 @@ const BlogPostPage: React.FC = () => {
 
     if (!blog) {
         return (
-            <Container>
-                <Typography variant="h4">Loading...</Typography>
-            </Container>
+            <>
+
+                
+                <Container>
+                    <Typography variant="h4">Loading...</Typography>
+                </Container>
+            </>
         );
     }
 
     return (
 
         <>
-            <Head>
-                <title>{blog.title}</title>
-            </Head>
+           
 
 
             <Container maxWidth="lg">
 
-                <Typography color='primary' fontSize='18' sx={{ marginTop: '20px', marginLeft: "auto" , marginBottom:"20px" }} >
+                <Typography color='primary' fontSize='18' sx={{ marginTop: '20px', marginLeft: "auto", marginBottom: "20px" }} >
                     <Link className='blogsLink' href='/' color='primary' style={{ display: 'flex', alignItems: 'center' }} >
 
                         <ArrowBackIosIcon sx={{
@@ -131,5 +134,7 @@ const BlogPostPage: React.FC = () => {
         </>
     );
 };
+
+
 
 export default BlogPostPage;

@@ -12,6 +12,10 @@ type Blog = {
 };
 
 
+export const metadata = {
+  title: 'Posts',
+};
+
 
 async function getData(): Promise<Blog[]> {
   try {
@@ -38,10 +42,6 @@ export default async function Home() {
 
     <>
 
-
-      <Head>
-        <title>Posts</title>
-      </Head>
 
       <Container maxWidth="lg">
 
