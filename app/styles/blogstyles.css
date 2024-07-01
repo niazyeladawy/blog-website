@@ -1,0 +1,19 @@
+.blogLink svg{
+    position: relative;
+    transition: all .3s ease;
+    left: 0;
+  }
+  .blogLink:hover svg{  
+    left: 3px;
+  }
+  
+  .blogsLink svg{
+    position: relative;
+    transition: all .3s ease;
+    left: 0;
+  }
+  .blogsLink:hover svg{  
+    left: -3px;
+  }
+  
+  
